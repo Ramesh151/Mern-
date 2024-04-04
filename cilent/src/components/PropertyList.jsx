@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 const PropertyList = ({ products }) => {
   return (
     <div className="">
+      <h1 className=" text-black p-6 text-2xl font-bold text-center">
+        PrODUCT LIST
+      </h1>
       {products.map((product) => (
         <Link to={`/products/${product._id}`} key={product._id}>
           <div className="max-w-2xl mx-auto mt-4">
