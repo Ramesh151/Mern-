@@ -19,5 +19,8 @@ app.use(cookieParser());
 import PropertyRouter from "./routes/property.route.js";
 
 app.use("/api", PropertyRouter);
+app.get("/", (req, res) => {
+  res.send("this backend...");
+});
 
 export { app };
