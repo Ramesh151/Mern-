@@ -12,7 +12,7 @@ function App() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/getproperty"
+          "https://server-jvhw.onrender.com/api/getproperty"
         );
         setProducts(response.data);
       } catch (error) {
